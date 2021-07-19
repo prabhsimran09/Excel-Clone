@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./perfect-scrollbar/css/perfect-scrollbar.css">
     <link rel="stylesheet" href="style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Excel Clone</title>
 </head>
 <body>
     <div class="main-container">
@@ -28,7 +29,7 @@
             <div class="menu-icon material-icons">content_copy</div>
             <div class="menu-icon material-icons">content_paste</div>
             <select class="menu-selector" id="font-family">
-                <option  style="font-family:Noto Sans"value="Noto Sans">Noto Sans</option>
+                <option  style="font-family:Noto Sans"value="Noto Sans" selected="true">Noto Sans</option>
                 <option style="font-family:Arial" value="Arial">Arial</option>
                 <option style="font-family:Calibri" value="Calibri">Calibri</option>
                 <option style="font-family:Comic Sans MS" value="Comic Sans MS">Comic Sans MS</option>
@@ -41,20 +42,20 @@
                 <option style="font-family:Verdana" value="Verdana">Verdana</option>
             </select>
             <select class="menu-selector" id="font-size">
-                <option value="10">2</option>
-                <option value="10">4</option>
-                <option value="10">6</option>
-                <option value="10">8</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
                 <option value="10">10</option>
-                <option value="10">12</option>
-                <option value="10">14</option>
-                <option value="10">16</option>
-                <option value="10">18</option>
-                <option value="10">20</option>
-                <option value="10">24</option>
-                <option value="10">26</option>
-                <option value="10">28</option>
-                <option value="10">30</option>
+                <option value="12" selected="true">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="36">36</option>
             </select>
             <div class="menu-icon material-icons">format_bold</div>
             <div class="menu-icon material-icons">format_italic</div>
@@ -87,6 +88,7 @@
         </div>
         <div class="sheet-bar"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="./perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+    <script src="./script.js"></script>
     </body>
 </html>
